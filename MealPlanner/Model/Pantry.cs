@@ -63,9 +63,13 @@ namespace MealPlanner.Model
         {
             bool consumed_ingredients;
 
-            if (quantity == ingredient)
+            if (quantity = ingredient)
             {
-                
+                consumed_ingredients = false;
+            }
+            else
+            {
+                return true;
             }
 
             return false;
