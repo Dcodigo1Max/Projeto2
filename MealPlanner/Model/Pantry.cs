@@ -40,6 +40,14 @@ namespace MealPlanner.Model
         /// <param name="quantity">The new amount to set</param>
         public void AddIngredient(IIngredient ingredient, int quantity)
         {
+            ingredient = new IIngredient.Add(ingredient);
+            
+
+            if (quantity == quantity)
+            {
+                
+            } 
+
             //Implement Me
         }
 
@@ -53,7 +61,10 @@ namespace MealPlanner.Model
         /// pantry or if there's not enough quantity</returns>
         public bool ConsumeIngredient(IIngredient ingredient, int quantity)
         {
-            //Implement Me
+           
+            
+            if 
+
             return false;
         }
 
@@ -86,7 +97,8 @@ namespace MealPlanner.Model
         /// <param name="file">Path to the ingredients file</param>
         public void LoadIngredientsFile(string file)
         {
-            //Implement Me
+            file = File.ReadAllLines("ingredients.txt");
+
         }
     }
 }
