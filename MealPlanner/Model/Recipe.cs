@@ -7,6 +7,6 @@ namespace MealPlanner.Model
 {
     public class Recipe : IRecipe
     {
-        
+        string Name = 
     }
 }
