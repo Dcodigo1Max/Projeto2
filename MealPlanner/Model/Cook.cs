@@ -30,7 +30,10 @@ namespace MealPlanner.Model
         /// <param name="recipeFiles">Array of file paths</param>
         public void LoadRecipeFiles(string[] recipeFiles)
         {
-            //Implement Me
+            string path = recipeFiles[0];
+            StreamReader sr = new StreamReader("Toast.txt", "ScrambledEggs.txt");
+            
+
         }
 
         /// <summary>
