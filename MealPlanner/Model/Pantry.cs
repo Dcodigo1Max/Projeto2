@@ -40,11 +40,12 @@ namespace MealPlanner.Model
         /// <param name="quantity">The new amount to set</param>
         public void AddIngredient(IIngredient ingredient, int quantity)
         {
-            
+            quantity = new quantity;
 
-            if ( => quantity)
+            if (ingredient <= quantity)
             {
                 ingredient = new IIngredient.Add(ingredient);
+
             } 
 
             //Implement Me
